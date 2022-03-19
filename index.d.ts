@@ -105,12 +105,12 @@ export class Modal {
 
   title: string;
   customId: string;
-  components: Array<TextInputComponent>;
+  components: Array<TextInputComponent>[];
 
   setTitle(title: string): Modal;
   setCustomId(id: string): Modal;
-  addComponents(...components: Array<TextInputComponent>): Modal;
-  setComponents(...components: Array<TextInputComponent>): Modal;
+  addComponents(...components: Array<TextInputComponent>[]): Modal;
+  setComponents(...components: Array<TextInputComponent>[]): Modal;
   spliceComponents(): Modal;
   toJSON(): APIModalInteractionResponseCallbackData;
 }
